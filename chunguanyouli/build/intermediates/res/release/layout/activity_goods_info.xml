@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <com.views.ScrollViewForViewPager
+            android:id="@+id/goodsInfoScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout1"
+           
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <Button
+                        android:id="@+id/goodsInfoGoPics"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:text="商品描述"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/goodsInfoGoCanshu"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        android:text="商品评价"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/goodsInfoGoDianputuijian"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        android:text="村官推荐"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/goodsInfoImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="288dp"
+                    android:src="@drawable/index_news_list_big"
+                    android:visibility="gone" />
+
+                <com.utoo.autoviewpager.AutoScrollViewPager
+                    android:id="@+id/goodsInfoImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:focusable="true" >
+                </com.utoo.autoviewpager.AutoScrollViewPager>
+
+                <include layout="@layout/inc_goods_info_infomations" />
+
+                <LinearLayout
+                    android:id="@+id/goodsInfoCommlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gainsboro"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/goodsInfoCommSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="8dp"
+                        android:text="产品印象 （43）" />
+
+                    <include layout="@layout/item_comment" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/gainsboro" />
+
+                    <Button
+                        android:id="@+id/goodsInfoGoCommends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="查看更多评价"
+                        android:textColor="@color/green" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.views.ScrollViewForViewPager>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <Button
+                android:id="@+id/goodsInfoAddCar"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@color/blue_bright"
+                android:text="加入购物车"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/goodsInfoBuy"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="立刻订购"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_goods_info.xml -->

@@ -1,0 +1,326 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gainsboro"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="商品主图：\t" />
+
+                <ImageView
+                    android:id="@+id/updateGoodsMainImage"
+                    android:layout_width="0dp"
+                    android:layout_height="96dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/index_goods_list" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/updateGoodsImage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:gravity="center_vertical|left"
+                android:maxLength="7"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="添加商品图片"
+                android:textSize="16sp" />
+
+            <com.views.NoScrollGridView
+                android:id="@+id/updateGoodsImageList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:numColumns="3" >
+            </com.views.NoScrollGridView>
+
+            <Button
+                android:id="@+id/addPersonImage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:gravity="center_vertical|left"
+                android:maxLength="7"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="添加农户图片"
+                android:textSize="16sp" />
+
+            <com.views.NoScrollGridView
+                android:id="@+id/addPersonImageList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:numColumns="3" >
+            </com.views.NoScrollGridView>
+
+            <Button
+                android:id="@+id/addAreaImage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:gravity="center_vertical|left"
+                android:maxLength="7"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="添加种、养殖环境图片"
+                android:textSize="16sp" />
+
+            <com.views.NoScrollGridView
+                android:id="@+id/addAreaImageList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:numColumns="3" >
+            </com.views.NoScrollGridView>
+
+            <EditText
+                android:id="@+id/updateGoodsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:ems="10"
+                android:hint="请输入商品标题"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/updateGoodsType"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="类目"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="8dp"
+                    android:text="养殖农户："
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/updateGoodsFarmer"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入农户名"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="8dp"
+                    android:text="价格(元)"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/updateGoodsPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="￥"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="8dp"
+                    android:text="单位："
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/updateGoodsDW"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入该价格所销售单位"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:maxLength="7"
+                    android:paddingLeft="8dp"
+                    android:text="库存"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/updateGoodsStore"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="库存"
+                    android:inputType="number"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="8dp"
+                    android:text="运费"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/updateGoodsAppend"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="￥"
+                    android:inputType="numberDecimal"
+                    android:paddingRight="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/updateGoodsDes"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:gravity="left|top"
+                android:hint="请输入产品描述"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/updateGoodsAppendSpace"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bgw_c3_l0"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:gravity="center_vertical|left"
+                android:maxLength="7"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="发货地"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/updateGoodsSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:text="提交修改"
+                android:textSize="16sp"
+                android:weightSum="2" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/layout/activity_update_goods.xml -->

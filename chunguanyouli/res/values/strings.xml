@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">村官有礼</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_contry_find">走进南川</string>
+    <string name="title_activity_go_in_nanchuan">走进南川</string>
+    <string name="title_activity_login">登录</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_reset_password">找回密码</string>
+    <string name="title_activity_read_article">文章精选</string>
+    <string name="title_activity_goods_info">商品详情</string>
+    <string name="title_activity_make_order">购买</string>
+    <string name="title_activity_collection_temp">我的收藏</string>
+    <string name="title_activity_my_collection_goods">我的收藏商品</string>
+    <string name="title_activity_my_collection_contry">我的收藏村子</string>
+    <string name="title_activity_my_shop">我的店铺</string>
+    <string name="title_activity_order_mannerger">订单管理</string>
+    <string name="title_activity_goods_mannerger">商品管理</string>
+    <string name="title_activity_add_goods">发布商品</string>
+    <string name="title_activity_update_goods">修改商品信息</string>
+    <string name="title_activity_choose_classify">选择商品类型</string>
+    <string name="title_activity_my_shopping_order">订单管理</string>
+    <string name="title_activity_shop_order_info">查看订单</string>
+    <string name="title_activity_officer_upgrade">村官认证</string>
+    <string name="title_activity_classify_goods">商品分类</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_goods_pics">图文详细</string>
+    <string name="title_activity_goods_commend">商品评价</string>
+    <string name="title_activity_the_shop_recommend">店铺推荐</string>
+    <string name="title_activity_article_list">村官点滴</string>
+    <string name="title_activity_personal">个人中心</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_main_page">首页</string>
+    <string name="title_activity_my_shop_setting">店铺设置</string>
+    <string name="title_activity_choose_goods_type">选择商品分类</string>
+    <string name="title_activity_add_goods_edit_des">商品描述</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="title_activity_updatepersonal_info">编辑个人信息</string>
+    <string name="title_activity_officer_apply_choose_space">选择任职区域</string>
+    <string name="title_activity_my_article">村官之声</string>
+    <string name="title_activity_ben_zhen_zhi_sheng_activity">本镇之声</string>
+    <string name="title_activity_my_collage_manager">村子管理</string>
+    <string name="title_activity_modify_city_content">ModifyCityContentActivity</string>
+    <string name="title_activity_modify_titles">ModifyTitlesActivity</string>
+    <string name="title_activity_recommend_goods">RecommendGoodsActivity</string>
+    <string name="title_activity_modify_diandi">ModifyDiandiActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="register_name_digits">_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="title_activity_update_goods_main_img">修改主图</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_comment">评论</string>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <Button
+        android:id="@+id/mainpage_gonanchuan"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bgbase_c0_l0"
+        android:text="走进南川"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_margin="4dp"
+        android:background="@color/gainsboro" />
+
+    <Button
+        android:id="@+id/mainpage_cunguandiandi"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bgbase_c0_l0"
+        android:text="村官点滴"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_margin="4dp"
+        android:background="@color/gainsboro" />
+
+    <Button
+        android:id="@+id/mainpage_woyaotuijian"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bgbase_c0_l0"
+        android:text="我要推荐"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/layout/inc_fg_mainpage_fastwindow.xml -->

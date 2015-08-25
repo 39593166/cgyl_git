@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="center_vertical"
+        android:hint="真实姓名"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="center_vertical"
+        android:hint="任职区域"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/idcard"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="center_vertical"
+        android:hint="身份证号"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/face"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="center_vertical"
+        android:hint="政治面貌"
+        android:entries="@array/face"
+        android:paddingLeft="12dp" />
+
+    <EditText
+        android:id="@+id/function"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="center_vertical"
+        android:hint="工作职能"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/office"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="center_vertical"
+        android:hint="职位"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

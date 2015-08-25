@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red_light">#ffff4444</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="blue_bright">#ff00ddff</color>
+    <color name="orange_light">#ffffbb33</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 幽灵白 -->
+    <color name="ghost_white">#F8F8FF</color>
+    <!-- 灰色 -->
+    <color name="gray">#C0C0C0</color>
+    <!-- 冷灰色 -->
+    <color name="mealnge_grey">#808A87</color>
+    <!-- 高灰色 -->
+    <color name="gainsboro">#DCDCDC</color>
+    <!-- 黄色 -->
+    <color name="yellow">#FFFF00</color>
+    <!-- 桔黄色 -->
+    <color name="saffron">#FF8000</color>
+    <!-- 青色 -->
+    <color name="cyan">#00FFFF</color>
+    <!-- 绿色 -->
+    <color name="green">#42B703</color>
+    <!-- 蓝色 -->
+    <color name="blue">#0000FF</color>
+    <!-- 天蓝色 -->
+    <color name="sky_blue">#F0FFFF</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!-- 纳瓦白 -->
+    <color name="navajoWhite">#FFDEAD</color>
+    <!-- 康购单独使用 -->
+    <color name="cg_base">#1ab750</color>
+    <color name="cg_bg">#E9ECF1</color>
+    <!-- 灰色 -->
+    <color name="gray_line_center">#eeeeee</color>
+    <color name="gray_line_side">#fefefe</color>
+    <color name="gray_text">#656565</color>
+    <color name="title_green">#1ab750</color>
+    <color name="orange">#ff7418</color>
+    <color name="index_button_bg">#00E1F1</color>
+
+</resources>

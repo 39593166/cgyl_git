@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cg_base"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            style="@style/noPicRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="公告"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            style="@style/noPicRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="活动"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton3"
+            style="@style/noPicRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="新闻"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton4"
+            style="@style/noPicRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="点滴"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/articleListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        ptr:ptrShowIndicator="false" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <!-- </LinearLayout> -->
+
+
+    <!-- </ScrollView> -->
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_villagedrops.xml -->

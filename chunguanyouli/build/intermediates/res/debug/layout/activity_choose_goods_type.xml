@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/classifyReflesh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <com.views.RLScrollView
+            android:id="@+id/chooseClsfyScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.views.NoScrollExpandableListView
+                android:id="@+id/chooseClassifyList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.views.NoScrollExpandableListView>
+        </com.views.RLScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/layout/activity_choose_goods_type.xml -->

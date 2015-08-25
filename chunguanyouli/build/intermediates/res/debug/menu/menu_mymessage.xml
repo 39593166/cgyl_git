@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.utoo.chunguanyouli.MainActivity" >
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/abc_ic_clear_mtrl_alpha"
+        android:orderInCategory="100"
+        android:title="取消"
+        app:showAsAction="ifRoom"/>
+
+</menu><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/menu/menu_mymessage.xml -->

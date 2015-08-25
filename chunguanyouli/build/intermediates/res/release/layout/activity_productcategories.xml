@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </RadioGroup>
+        </ScrollView>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/gridView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:numColumns="2" >
+        </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_productcategories.xml -->

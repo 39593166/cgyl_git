@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.utoo.chunguanyouli.ModifyCityContentActivity" >
+
+    <item
+        android:id="@+id/go_sotre"
+        android:icon="@drawable/mystore"
+        android:orderInCategory="100"
+        android:title="商铺管理"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/go_news"
+        android:icon="@drawable/woddingdan"
+        android:orderInCategory="100"
+        android:title="新闻公告管理"
+        app:showAsAction="ifRoom"/>
+
+</menu>

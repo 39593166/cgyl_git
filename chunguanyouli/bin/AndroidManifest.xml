@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.utoo.chunguanyouli"
+    android:installLocation="preferExternal"
+    android:versionCode="3"
+    android:versionName="1.02" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.utoo.chunguanyouli.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/index"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppBaseTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="pMEcBfBMerohWSAMOVEE22Zx" />
+
+        <activity
+            android:name=".ui.main.mainpage.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.UpdateShopActivity"
+            android:label="@string/title_activity_update_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- ccy --> 
+        <activity
+            android:name=".ui.personal.MyMessageActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.AuditActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.WalkIntoNanChuanActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.VillagesCategoryActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.VillagesIntroduceActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.RegistHometownActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.main.VillageDropsActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.ProductCategoriesActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.VillageDropsDetailActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.AddNewsActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.village.NewsForVillageActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.collage.NewsManagerActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- ccy end -->
+        <activity
+            android:name=".ui.shopping.ShoppingActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.main.innanchuan.ContryFindActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.main.innanchuan.GoInNanchuanActivity"
+            android:label="@string/title_activity_go_in_nanchuan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.account.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.account.RegistActivity"
+            android:label="@string/title_activity_regist"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.account.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.main.information.ReadArticleActivity"
+            android:label="@string/title_activity_read_article"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.goodsinfo.GoodsInfoActivity"
+            android:label="@string/title_activity_goods_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.MakeOrderActivity"
+            android:label="@string/title_activity_make_order"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.collection.CollectionTempActivity"
+            android:label="@string/title_activity_collection_temp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.collection.MyCollectionGoodsActivity"
+            android:label="@string/title_activity_my_collection_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.collection.MyCollectionContryActivity"
+            android:label="@string/title_activity_my_collection_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.MyShopActivity"
+            android:label="@string/title_activity_my_shop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.ordermannerger.OrderMannergerActivity"
+            android:label="@string/title_activity_order_mannerger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.goodsmanner.GoodsMannergerActivity"
+            android:label="@string/title_activity_goods_mannerger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.goodsmanner.AddGoodsActivity"
+            android:label="@string/title_activity_add_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.goodsmanner.UpdateGoodsActivity"
+            android:label="@string/title_activity_update_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.ChooseClassifyActivity"
+            android:label="@string/title_activity_choose_classify"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.ordermannerger.ShopOrderInfoActivity"
+            android:label="@string/title_activity_shop_order_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.goodslist.ClassifyGoodsListActivity"
+            android:label="@string/title_activity_classify_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.order.OrderListActivity"
+            android:label="@string/title_activity_classify_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.order.OrderInfoActivity"
+            android:label="@string/title_activity_classify_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.order.CommentGoodsListActivity"
+            android:label="@string/title_activity_classify_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.shoppingcar.ShoppingcarActivity"
+            android:label="@string/title_activity_classify_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.shoppingcar.ShoppingcarActivitySingle"
+            android:label="@string/title_activity_classify_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.GoodsClassifyActivity"
+            android:label="@string/title_activity_classify_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.goodsinfo.GoodsPicsActivity"
+            android:label="@string/title_activity_goods_pics"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.goodsinfo.GoodsCommendActivity"
+            android:label="@string/title_activity_goods_commend"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.shopping.goodsinfo.TheShopRecommendActivity"
+            android:label="@string/title_activity_the_shop_recommend"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.main.information.ArticleListActivity"
+            android:label="@string/title_activity_article_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.MyShopSettingActivity"
+            android:label="@string/title_activity_my_shop_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.goodsmanner.ChooseGoodsTypeActivity"
+            android:label="@string/title_activity_choose_goods_type"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.UpdatepersonalInfoActivity"
+            android:label="@string/title_activity_updatepersonal_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.comm.AddressChooseActivity"
+            android:label="@string/title_activity_officer_apply_choose_space"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.MyArticleActivity"
+            android:label="@string/title_activity_my_article"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.main.RecommendGoodsActivity"
+            android:label="@string/title_activity_recommend_goods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.collage.MyCollageManagerActivity"
+            android:label="@string/title_activity_my_collage_manager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.collage.ModifyCityContentActivity"
+            android:label="@string/title_activity_modify_city_content"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.collage.ModifyTitlesActivity"
+            android:label="@string/title_activity_modify_titles"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.collage.ModifyDiandiActivity"
+            android:label="@string/title_activity_modify_diandi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.collage.VillageManagerActivity"
+            android:label="@string/title_activity_contry_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.utoo.chunguanyouli.ui.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.personal.cg.dianpu.goodsmanner.UpdateGoodsMainImgActivity"
+            android:label="@string/title_activity_update_goods_main_img"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.utoo.chunguanyouli.ui.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.utoo.chunguanyouli.ui.personal.order.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

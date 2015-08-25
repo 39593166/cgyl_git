@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical" >
+	<include layout="@layout/layout_top_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <TextView
+                    android:id="@+id/cityManagerName"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="7"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="村名"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cityManagerUpdateContent"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:text="修改"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gainsboro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="村长："
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cityManagerLeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="村长名"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gainsboro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="8dp"
+                    android:text="记录日期："
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cityManagerDateSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="1970-1-1"
+                    android:textColor="@color/cg_base"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/cityManagerStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@color/cg_base"
+                    android:text="店铺"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cityManagerNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@color/cg_base"
+                    android:text="公告新闻"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gainsboro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cityManagerContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:minHeight="96dp"
+                    android:padding="4dp"
+                    android:textColor="#999999" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="24dp"
+                android:background="@color/gainsboro" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:text="村印象"
+                    android:textColor="@color/green_light"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/cityManagerUpdateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@null"
+                    android:text="修改"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/cityManagerTitles"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:numColumns="4"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_modifyvillage.xml -->

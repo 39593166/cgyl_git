@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <RadioGroup
+        android:id="@+id/commGoodsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cg_base"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/commGoodsChooseType1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/goods_lst_radio_check_change"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+              android:textColor="@color/white"
+            android:textSize="14sp" 
+            android:text="销量"
+          />
+
+        <RadioButton
+            android:id="@+id/commGoodsChooseType2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/goods_lst_radio_check_change"
+            android:button="@null"
+            android:gravity="center"
+            android:text="人气"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/commGoodsChooseType3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/goods_lst_radio_check_change"
+            android:button="@null"
+            android:gravity="center"
+            android:text="价格"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/commGoodsChooseType4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/goods_lst_radio_check_change"
+            android:button="@null"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/goodsListStripes"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@+id/group"
+        android:background="@android:color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/p03_goodsList_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_goods_list_comm.xml -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- </LinearLayout> -->
+
+
+    <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView -->
+    <!-- android:id="@+id/pullToRefreshListView" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:background="@android:color/white" > -->
+    <!-- </com.handmark.pulltorefresh.library.PullToRefreshListView> -->
+
+    <com.views.NoScrollListView
+        android:id="@+id/listView_recom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+    </com.views.NoScrollListView>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/layout/fragment_recommended.xml -->

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ABCDEF"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.views.CircleImageView
+            android:id="@+id/openShopImg"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/index_goods_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置您的商铺Logo" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/openShopName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="center_vertical"
+        android:hint="输入店铺名称"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/openShopDes"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:gravity="left|top"
+        android:hint="输入店铺描述"
+        android:paddingLeft="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/openShopSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:background="@color/cg_base"
+        android:gravity="center"
+        android:text="提交修改"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_openshop.xml -->

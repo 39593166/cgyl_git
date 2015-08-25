@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银杏村"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简    介："
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/jianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银杏村的夏天是清凉的世界，秋意浓时，漫山金黄" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="村印象："
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/cyx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盛产大麻花，茴香" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="存户 99 / 村名 176 / 村官 3 / 农产 12"
+            android:textColor="#999999"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/layout/adapter_rural.xml -->

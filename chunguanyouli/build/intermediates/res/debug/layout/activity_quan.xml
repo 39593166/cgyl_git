@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.utoo.autoviewpager.AutoScrollViewPager
+        android:id="@+id/main_adv_pager"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:focusable="true" >
+    </com.utoo.autoviewpager.AutoScrollViewPager>
+
+    <com.views.NoScrollGridView
+        android:id="@+id/good_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:padding="8dp"
+        android:verticalSpacing="8dp" >
+    </com.views.NoScrollGridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/cg_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="48dp"
+                android:background="@color/cg_base" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="每日更新"
+                android:textColor="@color/cg_base"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/goodsListMore"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:gravity="center_vertical|right"
+            android:paddingRight="8dp"
+            android:text="查看所有商品"
+            android:textColor="@color/cg_base" />
+    </LinearLayout>
+
+    <com.views.NoScrollGridView
+        android:id="@+id/goodsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:overScrollMode="never"
+        android:verticalSpacing="8dp" >
+    </com.views.NoScrollGridView>
+    <!-- </LinearLayout> -->
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/layout/activity_quan.xml -->

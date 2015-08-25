@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<include layout="@layout/layout_top_title"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/goodsmanner_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dip" >
+
+            <RadioButton
+                android:id="@+id/goodsmanner_radionButton_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="出售中"
+                android:textColor="@drawable/main_text" />
+<!-- 
+            <RadioButton
+                android:id="@+id/goodsmanner_radionButton_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="待审核"
+                android:textColor="@drawable/main_text" /> -->
+
+            <RadioButton
+                android:id="@+id/goodsmanner_radionButton_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="未上传"
+                android:textColor="@drawable/main_text" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/goodsmannerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/goodsmannerAddgoods"
+            android:layout_below="@+id/goodsmanner_radioGroup"
+            android:background="@color/gainsboro"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goodsmannerAddgoods"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/cg_base"
+            android:text="添加商品"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_goods_mannerger.xml -->

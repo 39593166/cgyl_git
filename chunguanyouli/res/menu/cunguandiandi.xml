@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.utoo.chunguanyouli.MainActivity" >
+
+    <item
+        android:id="@+id/newsmanagerAdd"
+        android:icon="@drawable/dengji"
+        android:orderInCategory="100"
+        android:title="发表文章"
+        app:showAsAction="ifRoom"/>
+
+</menu>

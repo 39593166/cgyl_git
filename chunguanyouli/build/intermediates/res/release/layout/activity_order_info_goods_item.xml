@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:weightSum="10" >
+
+    <ImageView
+        android:id="@+id/orderInfoGoodsItemImg"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_weight="2.5"
+        android:src="@drawable/index_goods_list" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/orderInfoGoodsItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xx"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/orderInfoGoodsItemSpe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="xx" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/orderInfoGoodsItemPriceMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="xx"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/orderInfoGoodsItemBuyNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="xx"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/android_project/AS/ChungGuan/chunguanyouli/res/layout/activity_order_info_goods_item.xml -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LibViewpager/LibViewpager.iml" filepath="$PROJECT_DIR$/LibViewpager/LibViewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoAlbum/PhotoAlbum.iml" filepath="$PROJECT_DIR$/PhotoAlbum/PhotoAlbum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cgyl_ali.iml" filepath="$PROJECT_DIR$/cgyl_ali.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chunguanyouli/chunguanyouli.iml" filepath="$PROJECT_DIR$/chunguanyouli/chunguanyouli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myview/myview.iml" filepath="$PROJECT_DIR$/myview/myview.iml" />
+    </modules>
+  </component>
+</project>

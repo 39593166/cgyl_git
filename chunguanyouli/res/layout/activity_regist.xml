@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <EditText
+        android:id="@+id/regist_userName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/index_edit_bg"
+        android:digits="@string/register_name_digits"
+        android:hint="输入一个用户名"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/regist_password_1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/index_edit_bg"
+        android:digits="@string/register_name_digits"
+        android:ems="15"
+        android:hint="输入登录密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="16dip" />
+
+    <EditText
+        android:id="@+id/regist_password_2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/index_edit_bg"
+        android:digits="@string/register_name_digits"
+        android:ems="15"
+        android:hint="再次输入登录密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="14dip" />
+
+    <Button
+        android:id="@+id/regist_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dip"
+        android:background="@color/cg_base"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

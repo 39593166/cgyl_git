@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#259b24"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <com.views.CircleImageView
+                android:id="@+id/personal_head"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/head5" />
+
+            <LinearLayout
+                android:id="@+id/personal_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/personal_head"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/personal_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bianji2"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="童话小镇"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/switchPd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:text="切换账号"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/myorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/woddingdan"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="我的订单"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="center_vertical"
+                android:text="查看更多"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/myorder_noPay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/daifukuan"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="待付款"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/myorder_noAppend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/daifukuan"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="待发货"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/myorder_waitCollect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/daifukuan"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="待收货"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/myorder_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/daifukuan"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="待评价"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/myorder_return"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/daifukuan"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="售后"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/myNews"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/dengji"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="我的发帖"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/openShop"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/cunguanyouli"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="我的店铺"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/leaderRegist"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/cunguanyouli"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="村官认证"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/what"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/mycontrycollect"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="村子管理"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/myContry"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/mycontrycollect"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="关注村子"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/mycollection"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/wodshoucang"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="我的收藏"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/shopping"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/cunguanyouli"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="圈商城"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/shoppingcar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/shopping_car_white"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="购物车"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableLeft="@drawable/shezhi"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/arrow"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="设置"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/D:/android_project/AS/cgyl_ali/chunguanyouli/res/layout/inc_personal_info.xml -->

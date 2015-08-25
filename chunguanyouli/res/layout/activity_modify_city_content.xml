@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+  >
+
+    <include layout="@layout/layout_top_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="村名："
+		  android:padding="8dp" 
+        android:textColor="@color/cg_base" />
+
+    <EditText
+        android:id="@+id/modifyCityNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"  android:padding="8dp" 
+        android:background="@drawable/index_edit_bg"
+        android:ems="10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"  android:padding="8dp" 
+        android:text="乡村简介："
+        android:textColor="@color/cg_base" />
+
+    <EditText
+        android:id="@+id/modifyCityContentEdit"
+        android:layout_width="match_parent"  android:padding="8dp" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/index_edit_bg"
+        android:ems="10"
+        android:minHeight="96dp" />
+
+    <Button
+        android:id="@+id/modifyCityContentSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/cg_base"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/addOrderWnum"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgw_c3_l0"
+        android:ems="10"
+        android:hint="请输入物流单号"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

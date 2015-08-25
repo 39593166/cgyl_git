@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#53333333"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="8dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="购买数量"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/goodsInfoSubBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:text="—" />
+
+            <TextView
+                android:id="@+id/goodsInfoBuySum"
+                android:layout_width="48dp"
+                android:layout_height="44dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="100" />
+
+            <Button
+                android:id="@+id/goodsInfoAddBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:text="+" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/goodsInfoBack"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/cg_base"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/goodsInfoPopBuy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/cg_base"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="确认"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

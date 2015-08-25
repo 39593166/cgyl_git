@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="face">
+        <item>群众</item>
+        <item>团员</item>
+        <item>党员</item>
+    </string-array>
+    <string-array name="newstype">
+        <item>公告</item>
+        <item>活动</item>
+        <item>新闻</item>
+        <item>点滴</item>
+    </string-array>
+
+</resources>
